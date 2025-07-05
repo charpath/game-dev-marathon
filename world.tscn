@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://d33p8sonhonc6"]
+[gd_scene load_steps=6 format=3 uid="uid://d33p8sonhonc6"]
 
 [ext_resource type="PackedScene" uid="uid://bs45l1hkcm53t" path="res://player_1.tscn" id="1_f3sb7"]
 [ext_resource type="PackedScene" uid="uid://ck5j38x4gahpp" path="res://player_2.tscn" id="2_fj7yv"]
+[ext_resource type="Script" uid="uid://bqvs3exrjtwvj" path="res://player_1.gd" id="2_tlwt5"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_f3sb7"]
 
@@ -10,15 +11,23 @@ size = Vector2(2000, 200)
 
 [node name="World" type="Node2D"]
 
-[node name="Player" parent="." instance=ExtResource("1_f3sb7")]
-position = Vector2(759, 241)
+[node name="Player1" parent="." instance=ExtResource("1_f3sb7")]
+position = Vector2(760, 245)
+script = ExtResource("2_tlwt5")
+speed = 400
+gravity = 80
+jump_force = 1500
+grav_max = 1500
+player = 1
 
 [node name="Platform" type="StaticBody2D" parent="."]
-position = Vector2(980, 697)
+position = Vector2(951.47, 640)
+rotation = -0.15708
 collision_mask = 3
 metadata/_edit_group_ = true
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="Platform"]
+modulate = Color(0.374139, 0.374139, 0.374139, 1)
 position = Vector2(-1.52588e-05, -5.96046e-06)
 scale = Vector2(2000, 200)
 mesh = SubResource("QuadMesh_f3sb7")
@@ -28,3 +37,5 @@ shape = SubResource("RectangleShape2D_fj7yv")
 
 [node name="Player2" parent="." instance=ExtResource("2_fj7yv")]
 position = Vector2(251, 219)
+script = ExtResource("2_tlwt5")
+player = 2

@@ -4,4 +4,4 @@ extends Area2D
 
 func _on_body_entered(body: Node2D):
 	if body.player == color:
-		body.die()
+		get_tree().call_group("Player", "die")

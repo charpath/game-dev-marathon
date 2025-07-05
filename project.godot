@@ -25,6 +25,10 @@ window/stretch/mode="canvas_items"
 
 project/assembly_name="Game Dev Marathon"
 
+[global_group]
+
+Player=""
+
 [input]
 
 move_right_p1={

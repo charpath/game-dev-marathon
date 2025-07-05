@@ -106,16 +106,16 @@ position = Vector2(1448, 564)
 scale = Vector2(944, 174)
 
 [node name="BlackPlat5" parent="." instance=ExtResource("3_r74qd")]
-position = Vector2(1676, 351)
-scale = Vector2(200, 200)
+position = Vector2(1676, 326)
+scale = Vector2(200, 250)
 
 [node name="BlackPlat7" parent="." instance=ExtResource("3_r74qd")]
-position = Vector2(444, 351)
+position = Vector2(844, 351)
 scale = Vector2(200, 200)
 
 [node name="BlackPlat8" parent="." instance=ExtResource("3_r74qd")]
-position = Vector2(844, 326)
-scale = Vector2(200, 250)
+position = Vector2(444, 276)
+scale = Vector2(200, 150)
 
 [node name="BlackPlat6" parent="." instance=ExtResource("3_r74qd")]
 position = Vector2(1276, 151)
@@ -130,20 +130,20 @@ position = Vector2(1376, 464)
 scale = Vector2(800, 26)
 
 [node name="WhitePlatform5" parent="." instance=ExtResource("4_um5o3")]
-position = Vector2(1476, 351)
+position = Vector2(1076, 351)
 scale = Vector2(200, 200)
 
 [node name="WhitePlatform7" parent="." instance=ExtResource("4_um5o3")]
-position = Vector2(244, 351)
-scale = Vector2(200, 200)
+position = Vector2(244, 326)
+scale = Vector2(200, 250)
 
 [node name="WhitePlatform8" parent="." instance=ExtResource("4_um5o3")]
 position = Vector2(644, 151)
 scale = Vector2(200, 600)
 
 [node name="WhitePlatform6" parent="." instance=ExtResource("4_um5o3")]
-position = Vector2(1076, 326)
-scale = Vector2(200, 250)
+position = Vector2(1476, 276)
+scale = Vector2(200, 150)
 
 [node name="WhitePlatform4" parent="." instance=ExtResource("4_um5o3")]
 position = Vector2(472, 564)

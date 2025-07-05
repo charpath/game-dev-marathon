@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://be6xyqmjf4ytb"]
+
+[ext_resource type="PackedScene" uid="uid://by8vhe33k5dqn" path="res://Scenes/Objects/black_spike.tscn" id="1_p0vsi"]
+
+[node name="BlackSpike4" type="Node2D"]
+
+[node name="BlackSpike" parent="." instance=ExtResource("1_p0vsi")]
+
+[node name="BlackSpike2" parent="." instance=ExtResource("1_p0vsi")]
+position = Vector2(16, 0)
+
+[node name="BlackSpike3" parent="." instance=ExtResource("1_p0vsi")]
+position = Vector2(32, 0)
+
+[node name="BlackSpike4" parent="." instance=ExtResource("1_p0vsi")]
+position = Vector2(48, 0)

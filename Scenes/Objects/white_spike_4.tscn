@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://cacno7r2qou76"]
+
+[ext_resource type="PackedScene" uid="uid://2xgyspylln4b" path="res://Scenes/Objects/white_spike.tscn" id="1_881rp"]
+
+[node name="WhiteSpike4" type="Node2D"]
+
+[node name="WhiteSpike" parent="." instance=ExtResource("1_881rp")]
+
+[node name="WhiteSpike2" parent="." instance=ExtResource("1_881rp")]
+position = Vector2(16, 0)
+
+[node name="WhiteSpike3" parent="." instance=ExtResource("1_881rp")]
+position = Vector2(32, 0)
+
+[node name="WhiteSpike4" parent="." instance=ExtResource("1_881rp")]
+position = Vector2(48, 0)

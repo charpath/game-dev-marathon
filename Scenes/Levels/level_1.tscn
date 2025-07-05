@@ -1,33 +1,83 @@
-[gd_scene load_steps=6 format=3 uid="uid://crk2eiq1lpkym"]
+[gd_scene load_steps=10 format=3 uid="uid://crk2eiq1lpkym"]
 
 [ext_resource type="PackedScene" uid="uid://g5uac1w128v1" path="res://Scenes/Objects/boundary_plats.tscn" id="1_iixi8"]
 [ext_resource type="PackedScene" uid="uid://bs45l1hkcm53t" path="res://Scenes/Objects/player_1.tscn" id="2_cyadu"]
 [ext_resource type="PackedScene" uid="uid://ck5j38x4gahpp" path="res://Scenes/Objects/player_2.tscn" id="3_xgxfi"]
 [ext_resource type="PackedScene" uid="uid://ceq7e657lkmqv" path="res://Scenes/Objects/platform.tscn" id="4_5f3p6"]
-[ext_resource type="PackedScene" uid="uid://dg1ctl4ouelqo" path="res://Scenes/Objects/spike.tscn" id="5_cyadu"]
+[ext_resource type="PackedScene" uid="uid://ru1y45l4mak7" path="res://Scenes/Objects/platform_white.tscn" id="5_xgxfi"]
+[ext_resource type="PackedScene" uid="uid://cc7vxgymcmnah" path="res://Scenes/Objects/platform_black.tscn" id="6_5f3p6"]
+[ext_resource type="PackedScene" uid="uid://be6xyqmjf4ytb" path="res://Scenes/Objects/black_spike_4.tscn" id="7_rb0md"]
+[ext_resource type="PackedScene" uid="uid://cacno7r2qou76" path="res://Scenes/Objects/white_spike_4.tscn" id="8_u5ghp"]
+[ext_resource type="PackedScene" uid="uid://s6ejpxurr78d" path="res://Scenes/Objects/spike_4.tscn" id="9_hwvp3"]
 
 [node name="Level1" type="Node2D"]
 
 [node name="BoundaryPlats" parent="." instance=ExtResource("1_iixi8")]
 
 [node name="Player1" parent="." instance=ExtResource("2_cyadu")]
-position = Vector2(96, 50)
+position = Vector2(96, 146)
 
 [node name="Player2" parent="." instance=ExtResource("3_xgxfi")]
-position = Vector2(48, 50)
+position = Vector2(48, 146)
 
 [node name="Platform" parent="." instance=ExtResource("4_5f3p6")]
-position = Vector2(480, 96)
-scale = Vector2(960, 32)
+position = Vector2(240, 224)
+scale = Vector2(480, 96)
 
-[node name="Spike" parent="." instance=ExtResource("5_cyadu")]
-position = Vector2(232, 72)
+[node name="Platform3" parent="." instance=ExtResource("4_5f3p6")]
+position = Vector2(928, 256)
+scale = Vector2(896, 32)
 
-[node name="Spike2" parent="." instance=ExtResource("5_cyadu")]
-position = Vector2(248, 72)
+[node name="Platform2" parent="." instance=ExtResource("4_5f3p6")]
+position = Vector2(1056, 208)
+scale = Vector2(128, 64)
 
-[node name="Spike3" parent="." instance=ExtResource("5_cyadu")]
-position = Vector2(264, 72)
+[node name="Platform4" parent="." instance=ExtResource("4_5f3p6")]
+position = Vector2(1312, 208)
+scale = Vector2(128, 64)
 
-[node name="Spike4" parent="." instance=ExtResource("5_cyadu")]
-position = Vector2(280, 72)
+[node name="WhitePlatform" parent="." instance=ExtResource("5_xgxfi")]
+position = Vector2(544, 208)
+scale = Vector2(128, 64)
+
+[node name="WhitePlatform2" parent="." instance=ExtResource("5_xgxfi")]
+position = Vector2(800, 208)
+scale = Vector2(128, 64)
+
+[node name="BlackPlatform" parent="." instance=ExtResource("6_5f3p6")]
+position = Vector2(672, 208)
+scale = Vector2(128, 64)
+
+[node name="BlackPlatform2" parent="." instance=ExtResource("6_5f3p6")]
+position = Vector2(928, 208)
+scale = Vector2(128, 64)
+
+[node name="BlackSpike4" parent="." instance=ExtResource("7_rb0md")]
+position = Vector2(488, 232)
+
+[node name="BlackSpike5" parent="." instance=ExtResource("7_rb0md")]
+position = Vector2(552, 232)
+
+[node name="BlackSpike6" parent="." instance=ExtResource("7_rb0md")]
+position = Vector2(744, 232)
+
+[node name="BlackSpike7" parent="." instance=ExtResource("7_rb0md")]
+position = Vector2(808, 232)
+
+[node name="WhiteSpike4" parent="." instance=ExtResource("8_u5ghp")]
+position = Vector2(616, 232)
+
+[node name="WhiteSpike5" parent="." instance=ExtResource("8_u5ghp")]
+position = Vector2(680, 232)
+
+[node name="WhiteSpike6" parent="." instance=ExtResource("8_u5ghp")]
+position = Vector2(872, 232)
+
+[node name="WhiteSpike7" parent="." instance=ExtResource("8_u5ghp")]
+position = Vector2(936, 232)
+
+[node name="Spike4" parent="." instance=ExtResource("9_hwvp3")]
+position = Vector2(1128, 232)
+
+[node name="Spike5" parent="." instance=ExtResource("9_hwvp3")]
+position = Vector2(1192, 232)

@@ -4,7 +4,7 @@
 
 [sub_resource type="QuadMesh" id="QuadMesh_1rc8e"]
 
-[node name="Platform" type="StaticBody2D"]
+[node name="BlackPlatform" type="StaticBody2D"]
 modulate = Color(0, 0, 0, 1)
 collision_layer = 4
 collision_mask = 4

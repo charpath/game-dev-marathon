@@ -18,7 +18,7 @@ jump_force = 1500
 grav_max = 1500
 
 [node name="Platform" type="StaticBody2D" parent="."]
-position = Vector2(951.47, 640)
+position = Vector2(1245, 608)
 rotation = -0.15708
 collision_mask = 3
 metadata/_edit_group_ = true

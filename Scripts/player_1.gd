@@ -6,12 +6,18 @@ extends CharacterBody2D
 @export var grav_max = jump_force
 @export var player = 1
 @export var coyote_frames = 3
+@export var max_lockout = 60
 var can_jump = true
 var cur_coyote = coyote_frames
 var on_ground = true
 var initial_pos = Vector2.ZERO
+var lockout = 0
 
 func _physics_process(delta):
+	if lockout > 0:
+		lockout -= 1
+		return
+	
 	if !is_on_floor():
 		on_ground = false
 		velocity.y += gravity
@@ -57,3 +63,4 @@ func _ready():
 	
 func die():
 	position = initial_pos
+	lockout = max_lockout

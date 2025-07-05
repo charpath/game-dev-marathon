@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://2xgyspylln4b"]
+
+[ext_resource type="Script" uid="uid://db8dtfb67wl7k" path="res://Scripts/spike.gd" id="1_pvqn3"]
+[ext_resource type="Texture2D" uid="uid://bd4e2umlanrbk" path="res://Sprites/White_Spike.png" id="1_qnw0u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lrvur"]
+size = Vector2(6, 10)
+
+[node name="WhiteSpike" type="Area2D"]
+collision_layer = 16
+collision_mask = 2
+script = ExtResource("1_pvqn3")
+color = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3)
+shape = SubResource("RectangleShape2D_lrvur")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_qnw0u")
+metadata/_edit_group_ = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

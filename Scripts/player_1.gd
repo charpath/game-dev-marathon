@@ -9,6 +9,7 @@ extends CharacterBody2D
 var can_jump = true
 var cur_coyote = coyote_frames
 var on_ground = true
+var initial_pos = Vector2.ZERO
 
 func _physics_process(delta):
 	if !is_on_floor():
@@ -50,3 +51,9 @@ func _process(delta):
 		$AnimatedSprite2D.flip_v = false
 		# See the note below about the following boolean assignment.
 		$AnimatedSprite2D.flip_h = velocity.x < 0
+
+func _ready():
+	initial_pos = position
+	
+func die():
+	position = initial_pos

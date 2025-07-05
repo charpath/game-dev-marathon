@@ -16,10 +16,20 @@ size = Vector2(1, 1)
 [node name="Level0" type="Node2D"]
 
 [node name="Player1" parent="." instance=ExtResource("1_t218m")]
-position = Vector2(900, 1018)
+position = Vector2(900, 988)
+scale = Vector2(6, 6)
+speed = 600
+gravity = 80
+jump_force = 1400
+grav_max = 1400
 
 [node name="Player2" parent="." instance=ExtResource("2_v6xcw")]
-position = Vector2(1020, 1018)
+position = Vector2(1020, 988)
+scale = Vector2(6, 6)
+speed = 600
+gravity = 80
+jump_force = 1400
+grav_max = 1400
 
 [node name="Platform1" type="StaticBody2D" parent="."]
 position = Vector2(960, 1064)
@@ -114,8 +124,8 @@ position = Vector2(844, 351)
 scale = Vector2(200, 200)
 
 [node name="BlackPlat8" parent="." instance=ExtResource("3_r74qd")]
-position = Vector2(444, 276)
-scale = Vector2(200, 150)
+position = Vector2(444, 251)
+scale = Vector2(200, 100)
 
 [node name="BlackPlat6" parent="." instance=ExtResource("3_r74qd")]
 position = Vector2(1276, 151)
@@ -142,8 +152,8 @@ position = Vector2(644, 151)
 scale = Vector2(200, 600)
 
 [node name="WhitePlatform6" parent="." instance=ExtResource("4_um5o3")]
-position = Vector2(1476, 276)
-scale = Vector2(200, 150)
+position = Vector2(1476, 251)
+scale = Vector2(200, 100)
 
 [node name="WhitePlatform4" parent="." instance=ExtResource("4_um5o3")]
 position = Vector2(472, 564)

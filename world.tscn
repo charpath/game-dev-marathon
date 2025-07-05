@@ -19,6 +19,7 @@ gravity = 80
 jump_force = 1500
 grav_max = 1500
 player = 1
+coyote_frames = 6
 
 [node name="Platform" type="StaticBody2D" parent="."]
 position = Vector2(951.47, 640)
@@ -39,3 +40,4 @@ shape = SubResource("RectangleShape2D_fj7yv")
 position = Vector2(251, 219)
 script = ExtResource("2_tlwt5")
 player = 2
+coyote_frames = 6

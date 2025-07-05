@@ -1,0 +1,92 @@
+[gd_scene load_steps=6 format=3 uid="uid://ckr3pskujw6ep"]
+
+[ext_resource type="PackedScene" uid="uid://bs45l1hkcm53t" path="res://player_1.tscn" id="1_t218m"]
+[ext_resource type="PackedScene" uid="uid://ck5j38x4gahpp" path="res://player_2.tscn" id="2_v6xcw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_smnfn"]
+size = Vector2(1, 1)
+
+[sub_resource type="QuadMesh" id="QuadMesh_nu7sl"]
+
+[sub_resource type="MeshTexture" id="MeshTexture_omks2"]
+
+[node name="Level0" type="Node2D"]
+
+[node name="Player1" parent="." instance=ExtResource("1_t218m")]
+position = Vector2(900, 1018)
+
+[node name="Player2" parent="." instance=ExtResource("2_v6xcw")]
+position = Vector2(1020, 1018)
+
+[node name="Platform1" type="StaticBody2D" parent="."]
+position = Vector2(960, 1064)
+scale = Vector2(1920, 32)
+collision_mask = 2
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform1"]
+shape = SubResource("RectangleShape2D_smnfn")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platform1"]
+modulate = Color(0.423529, 0.423529, 0.423529, 1)
+mesh = SubResource("QuadMesh_nu7sl")
+texture = SubResource("MeshTexture_omks2")
+
+[node name="Platform2" type="StaticBody2D" parent="."]
+position = Vector2(960, 914)
+scale = Vector2(1634, 26)
+collision_mask = 2
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform2"]
+shape = SubResource("RectangleShape2D_smnfn")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Platform2"]
+modulate = Color(0.423529, 0.423529, 0.423529, 1)
+mesh = SubResource("QuadMesh_nu7sl")
+texture = SubResource("MeshTexture_omks2")
+
+[node name="BlackPlat1" type="StaticBody2D" parent="."]
+position = Vector2(1845, 914)
+scale = Vector2(150, 26)
+collision_layer = 4
+collision_mask = 2
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BlackPlat1"]
+shape = SubResource("RectangleShape2D_smnfn")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="BlackPlat1"]
+modulate = Color(0, 0, 0, 1)
+mesh = SubResource("QuadMesh_nu7sl")
+texture = SubResource("MeshTexture_omks2")
+
+[node name="WhitePlat1" type="StaticBody2D" parent="."]
+z_index = -1
+position = Vector2(75, 914)
+scale = Vector2(149.89, 26)
+collision_layer = 8
+collision_mask = 2
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WhitePlat1"]
+shape = SubResource("RectangleShape2D_smnfn")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="WhitePlat1"]
+mesh = SubResource("QuadMesh_nu7sl")
+texture = SubResource("MeshTexture_omks2")
+
+[node name="CenterWall" type="StaticBody2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(32, 1080)
+collision_layer = 4
+collision_mask = 2
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CenterWall"]
+shape = SubResource("RectangleShape2D_smnfn")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="CenterWall"]
+modulate = Color(0.423529, 0.423529, 0.423529, 1)
+mesh = SubResource("QuadMesh_nu7sl")
+texture = SubResource("MeshTexture_omks2")

@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://d33p8sonhonc6"]
+[gd_scene load_steps=6 format=3 uid="uid://d33p8sonhonc6"]
 
 [ext_resource type="PackedScene" uid="uid://bs45l1hkcm53t" path="res://player_1.tscn" id="1_f3sb7"]
 [ext_resource type="PackedScene" uid="uid://ck5j38x4gahpp" path="res://player_2.tscn" id="2_fj7yv"]
+[ext_resource type="Script" uid="uid://bqvs3exrjtwvj" path="res://player_1.gd" id="2_tlwt5"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_f3sb7"]
 
@@ -11,7 +12,8 @@ size = Vector2(2000, 200)
 [node name="World" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_f3sb7")]
-position = Vector2(759, 241)
+position = Vector2(760, 245)
+script = ExtResource("2_tlwt5")
 
 [node name="Platform" type="StaticBody2D" parent="."]
 position = Vector2(980, 697)

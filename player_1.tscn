@@ -1,7 +1,29 @@
 [gd_scene load_steps=5 format=3 uid="uid://bs45l1hkcm53t"]
 
-[ext_resource type="Script" uid="uid://bqvs3exrjtwvj" path="res://player.gd" id="1_onrkg"]
 [ext_resource type="Texture2D" uid="uid://dq5bqaugwi5ou" path="res://Placeholder.png" id="2_i3pqv"]
+
+[sub_resource type="GDScript" id="GDScript_wkcja"]
+script/source = "extends CharacterBody2D
+
+@export var speed = 300
+@export var gravity = 30
+@export var jump_force = 1000
+
+func _physics_process(delta):
+	if !is_on_floor():
+		velocity.y += gravity
+		if velocity.y > 600:
+			velocity.y = 600
+	
+	if Input.is_action_just_pressed(\"jump_p1\") && is_on_floor():
+		velocity.y -= jump_force
+	
+	var horizontal_direction = Input.get_axis(\"move_left_p1\", \"move_right_p1\")
+	
+	velocity.x = speed * horizontal_direction
+	
+	move_and_slide()
+"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_4flbx"]
 animations = [{
@@ -17,8 +39,8 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_onrkg"]
 size = Vector2(64, 64)
 
-[node name="Player" type="CharacterBody2D"]
-script = ExtResource("1_onrkg")
+[node name="Player1" type="CharacterBody2D"]
+script = SubResource("GDScript_wkcja")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

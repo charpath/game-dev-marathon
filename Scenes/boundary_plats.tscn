@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://g5uac1w128v1"]
+
+[ext_resource type="PackedScene" uid="uid://ceq7e657lkmqv" path="res://Scenes/platform.tscn" id="1_6p6dh"]
+
+[node name="BoundaryPlats" type="Node2D"]
+
+[node name="Platform" parent="." instance=ExtResource("1_6p6dh")]
+position = Vector2(-32, 540)
+scale = Vector2(64, 1080)
+
+[node name="Platform2" parent="." instance=ExtResource("1_6p6dh")]
+position = Vector2(1952, 540)
+scale = Vector2(64, 1080)
+
+[node name="Platform3" parent="." instance=ExtResource("1_6p6dh")]
+position = Vector2(960, -32)
+scale = Vector2(1920, 64)
+
+[node name="Platform4" parent="." instance=ExtResource("1_6p6dh")]
+position = Vector2(960, 1112)
+scale = Vector2(1920, 64)

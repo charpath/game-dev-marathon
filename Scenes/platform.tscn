@@ -1,6 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://ceq7e657lkmqv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xdow6"]
+size = Vector2(1, 1)
 
 [sub_resource type="QuadMesh" id="QuadMesh_1rc8e"]
 
@@ -12,5 +13,4 @@ shape = SubResource("RectangleShape2D_xdow6")
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="."]
 modulate = Color(0.332881, 0.332881, 0.332881, 1)
-scale = Vector2(20, 20)
 mesh = SubResource("QuadMesh_1rc8e")

@@ -1,7 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://ckr3pskujw6ep"]
+[gd_scene load_steps=8 format=3 uid="uid://ckr3pskujw6ep"]
 
 [ext_resource type="PackedScene" uid="uid://bs45l1hkcm53t" path="res://Scenes/player_1.tscn" id="1_t218m"]
 [ext_resource type="PackedScene" uid="uid://ck5j38x4gahpp" path="res://Scenes/player_2.tscn" id="2_v6xcw"]
+[ext_resource type="PackedScene" uid="uid://cc7vxgymcmnah" path="res://Scenes/platform_black.tscn" id="3_r74qd"]
+[ext_resource type="PackedScene" uid="uid://ru1y45l4mak7" path="res://Scenes/platform_white.tscn" id="4_um5o3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_smnfn"]
 size = Vector2(1, 1)
@@ -33,8 +35,8 @@ mesh = SubResource("QuadMesh_nu7sl")
 texture = SubResource("MeshTexture_omks2")
 
 [node name="Platform2" type="StaticBody2D" parent="."]
-position = Vector2(960, 914)
-scale = Vector2(1634, 26)
+position = Vector2(960, 864)
+scale = Vector2(1620, 32)
 collision_mask = 2
 metadata/_edit_group_ = true
 
@@ -47,8 +49,8 @@ mesh = SubResource("QuadMesh_nu7sl")
 texture = SubResource("MeshTexture_omks2")
 
 [node name="BlackPlat1" type="StaticBody2D" parent="."]
-position = Vector2(1845, 914)
-scale = Vector2(150, 26)
+position = Vector2(1845, 864)
+scale = Vector2(150, 32)
 collision_layer = 4
 collision_mask = 2
 metadata/_edit_group_ = true
@@ -63,8 +65,8 @@ texture = SubResource("MeshTexture_omks2")
 
 [node name="WhitePlat1" type="StaticBody2D" parent="."]
 z_index = -1
-position = Vector2(75, 914)
-scale = Vector2(149.89, 26)
+position = Vector2(75, 864)
+scale = Vector2(149.89, 32)
 collision_layer = 8
 collision_mask = 2
 metadata/_edit_group_ = true
@@ -89,3 +91,11 @@ shape = SubResource("RectangleShape2D_smnfn")
 modulate = Color(0.423529, 0.423529, 0.423529, 1)
 mesh = SubResource("QuadMesh_nu7sl")
 texture = SubResource("MeshTexture_omks2")
+
+[node name="BlackPlat2" parent="." instance=ExtResource("3_r74qd")]
+position = Vector2(397, 664)
+scale = Vector2(794, 26)
+
+[node name="WhitePlatform2" parent="." instance=ExtResource("4_um5o3")]
+position = Vector2(1523, 664)
+scale = Vector2(794, 26)

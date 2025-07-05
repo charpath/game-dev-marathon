@@ -1,11 +1,11 @@
 extends CharacterBody2D
 
 @export var speed = 300
-@export var gravity = 30
-@export var jump_force = 1000
-@export var grav_max = 600
+@export var gravity = 80
+@export var jump_force = 1400
+@export var grav_max = jump_force
 @export var player = 1
-@export var coyote_frames = 6
+@export var coyote_frames = 3
 var can_jump = true
 var cur_coyote = coyote_frames
 var on_ground = true

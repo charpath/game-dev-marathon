@@ -81,7 +81,7 @@ texture = SubResource("MeshTexture_omks2")
 
 [node name="CenterWall" type="StaticBody2D" parent="."]
 position = Vector2(960, 540)
-scale = Vector2(32, 1080)
+scale = Vector2(32, 1480)
 collision_mask = 2
 metadata/_edit_group_ = true
 
@@ -97,8 +97,56 @@ texture = SubResource("MeshTexture_omks2")
 position = Vector2(397, 664)
 scale = Vector2(794, 26)
 
+[node name="BlackPlat3" parent="." instance=ExtResource("3_r74qd")]
+position = Vector2(544, 464)
+scale = Vector2(800, 26)
+
+[node name="BlackPlat4" parent="." instance=ExtResource("3_r74qd")]
+position = Vector2(1448, 564)
+scale = Vector2(944, 174)
+
+[node name="BlackPlat5" parent="." instance=ExtResource("3_r74qd")]
+position = Vector2(1676, 351)
+scale = Vector2(200, 200)
+
+[node name="BlackPlat7" parent="." instance=ExtResource("3_r74qd")]
+position = Vector2(444, 351)
+scale = Vector2(200, 200)
+
+[node name="BlackPlat8" parent="." instance=ExtResource("3_r74qd")]
+position = Vector2(844, 326)
+scale = Vector2(200, 250)
+
+[node name="BlackPlat6" parent="." instance=ExtResource("3_r74qd")]
+position = Vector2(1276, 151)
+scale = Vector2(200, 600)
+
 [node name="WhitePlatform2" parent="." instance=ExtResource("4_um5o3")]
 position = Vector2(1523, 664)
 scale = Vector2(794, 26)
+
+[node name="WhitePlatform3" parent="." instance=ExtResource("4_um5o3")]
+position = Vector2(1376, 464)
+scale = Vector2(800, 26)
+
+[node name="WhitePlatform5" parent="." instance=ExtResource("4_um5o3")]
+position = Vector2(1476, 351)
+scale = Vector2(200, 200)
+
+[node name="WhitePlatform7" parent="." instance=ExtResource("4_um5o3")]
+position = Vector2(244, 351)
+scale = Vector2(200, 200)
+
+[node name="WhitePlatform8" parent="." instance=ExtResource("4_um5o3")]
+position = Vector2(644, 151)
+scale = Vector2(200, 600)
+
+[node name="WhitePlatform6" parent="." instance=ExtResource("4_um5o3")]
+position = Vector2(1076, 326)
+scale = Vector2(200, 250)
+
+[node name="WhitePlatform4" parent="." instance=ExtResource("4_um5o3")]
+position = Vector2(472, 564)
+scale = Vector2(944, 174)
 
 [node name="BoundaryPlats" parent="." instance=ExtResource("5_um5o3")]

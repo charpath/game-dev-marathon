@@ -6,15 +6,11 @@
 
 [node name="Platform" parent="." instance=ExtResource("1_6p6dh")]
 position = Vector2(-32, 540)
-scale = Vector2(64, 1080)
+scale = Vector2(64, 1580)
 
 [node name="Platform2" parent="." instance=ExtResource("1_6p6dh")]
 position = Vector2(1952, 540)
-scale = Vector2(64, 1080)
-
-[node name="Platform3" parent="." instance=ExtResource("1_6p6dh")]
-position = Vector2(960, -32)
-scale = Vector2(1920, 64)
+scale = Vector2(64, 1580)
 
 [node name="Platform4" parent="." instance=ExtResource("1_6p6dh")]
 position = Vector2(960, 1112)

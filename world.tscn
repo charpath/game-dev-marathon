@@ -6,50 +6,25 @@
 [sub_resource type="QuadMesh" id="QuadMesh_f3sb7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fj7yv"]
-size = Vector2(1920, 64)
+size = Vector2(2000, 200)
 
 [node name="World" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_f3sb7")]
-position = Vector2(810, 984)
+position = Vector2(759, 241)
 
 [node name="Platform" type="StaticBody2D" parent="."]
-position = Vector2(960, 1048)
-collision_mask = 2
+position = Vector2(980, 697)
+collision_mask = 3
 metadata/_edit_group_ = true
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="Platform"]
-scale = Vector2(1920, 64)
+position = Vector2(-1.52588e-05, -5.96046e-06)
+scale = Vector2(2000, 200)
 mesh = SubResource("QuadMesh_f3sb7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform"]
 shape = SubResource("RectangleShape2D_fj7yv")
 
-[node name="Platform2" type="StaticBody2D" parent="."]
-position = Vector2(960, 898)
-scale = Vector2(0.8, 1)
-collision_mask = 2
-metadata/_edit_group_ = true
-
-[node name="MeshInstance2D" type="MeshInstance2D" parent="Platform2"]
-scale = Vector2(1920, 64)
-mesh = SubResource("QuadMesh_f3sb7")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform2"]
-shape = SubResource("RectangleShape2D_fj7yv")
-
-[node name="Wall1" type="StaticBody2D" parent="."]
-position = Vector2(960, 540)
-scale = Vector2(0.04, 16.875)
-collision_mask = 2
-metadata/_edit_group_ = true
-
-[node name="MeshInstance2D" type="MeshInstance2D" parent="Wall1"]
-scale = Vector2(1920, 64)
-mesh = SubResource("QuadMesh_f3sb7")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall1"]
-shape = SubResource("RectangleShape2D_fj7yv")
-
 [node name="Player2" parent="." instance=ExtResource("2_fj7yv")]
-position = Vector2(1100, 984)
+position = Vector2(251, 219)

@@ -1,0 +1,55 @@
+[gd_scene load_steps=6 format=3 uid="uid://bp5i71nbwqc4y"]
+
+[ext_resource type="PackedScene" uid="uid://bs45l1hkcm53t" path="res://Scenes/Objects/player_1.tscn" id="1_dbq10"]
+[ext_resource type="PackedScene" uid="uid://ck5j38x4gahpp" path="res://Scenes/Objects/player_2.tscn" id="2_taws2"]
+[ext_resource type="PackedScene" uid="uid://ceq7e657lkmqv" path="res://Scenes/Objects/platform.tscn" id="3_mb1if"]
+[ext_resource type="PackedScene" uid="uid://cc7vxgymcmnah" path="res://Scenes/Objects/platform_black.tscn" id="4_bmcj7"]
+[ext_resource type="PackedScene" uid="uid://ru1y45l4mak7" path="res://Scenes/Objects/platform_white.tscn" id="5_j5tiy"]
+
+[node name="Level01" type="Node2D"]
+
+[node name="Player1" parent="." instance=ExtResource("1_dbq10")]
+position = Vector2(400.413, 458.019)
+
+[node name="Player2" parent="." instance=ExtResource("2_taws2")]
+position = Vector2(289, 48)
+
+[node name="Platform" parent="." instance=ExtResource("3_mb1if")]
+position = Vector2(0, 540)
+scale = Vector2(1.425, 54.285)
+
+[node name="Platform2" parent="." instance=ExtResource("3_mb1if")]
+position = Vector2(1920, 540)
+scale = Vector2(1.425, 54.285)
+
+[node name="Platform3" parent="." instance=ExtResource("3_mb1if")]
+position = Vector2(960, 1080)
+scale = Vector2(97.22, 1.425)
+
+[node name="BlackPlatform" parent="." instance=ExtResource("4_bmcj7")]
+position = Vector2(378, 971)
+scale = Vector2(10.565, 1)
+
+[node name="BlackPlatform2" parent="." instance=ExtResource("4_bmcj7")]
+position = Vector2(494, 873)
+scale = Vector2(10.565, 1)
+
+[node name="BlackPlatform3" parent="." instance=ExtResource("4_bmcj7")]
+position = Vector2(708, 723)
+scale = Vector2(10.565, 1)
+
+[node name="BlackPlatform4" parent="." instance=ExtResource("4_bmcj7")]
+position = Vector2(909, 559)
+scale = Vector2(10.565, 1)
+
+[node name="WhitePlatform" parent="." instance=ExtResource("5_j5tiy")]
+position = Vector2(221, 920)
+scale = Vector2(11.525, 1)
+
+[node name="WhitePlatform2" parent="." instance=ExtResource("5_j5tiy")]
+position = Vector2(410, 791)
+scale = Vector2(11.525, 1)
+
+[node name="WhitePlatform3" parent="." instance=ExtResource("5_j5tiy")]
+position = Vector2(633, 631)
+scale = Vector2(11.525, 1)

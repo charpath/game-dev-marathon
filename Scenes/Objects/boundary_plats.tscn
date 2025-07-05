@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://g5uac1w128v1"]
 
-[ext_resource type="PackedScene" uid="uid://ceq7e657lkmqv" path="res://Scenes/platform.tscn" id="1_6p6dh"]
+[ext_resource type="PackedScene" uid="uid://ceq7e657lkmqv" path="res://Scenes/Objects/platform.tscn" id="1_6p6dh"]
 
 [node name="BoundaryPlats" type="Node2D"]
 

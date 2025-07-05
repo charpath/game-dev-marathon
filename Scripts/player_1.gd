@@ -6,7 +6,7 @@ extends CharacterBody2D
 @export var grav_max = jump_force
 @export var player = 1
 @export var coyote_frames = 3
-@export var max_lockout = 60
+@export var max_lockout = 20
 var can_jump = true
 var cur_coyote = coyote_frames
 var on_ground = true

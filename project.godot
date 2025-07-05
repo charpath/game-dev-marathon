@@ -70,8 +70,8 @@ jump_p2={
 2d_physics/layer_2="Player"
 2d_physics/layer_3="BlackPlatform"
 2d_physics/layer_4="WhitePlatform"
-2d_physics/layer_5="Hazard"
 
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+environment/defaults/default_clear_color=Color(0.466667, 0.466667, 0.466667, 1)

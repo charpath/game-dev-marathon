@@ -31,7 +31,7 @@ metadata/_edit_group_ = true
 shape = SubResource("RectangleShape2D_smnfn")
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="Platform1"]
-modulate = Color(0.423529, 0.423529, 0.423529, 1)
+modulate = Color(0.333333, 0.333333, 0.333333, 1)
 mesh = SubResource("QuadMesh_nu7sl")
 texture = SubResource("MeshTexture_omks2")
 
@@ -45,7 +45,7 @@ metadata/_edit_group_ = true
 shape = SubResource("RectangleShape2D_smnfn")
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="Platform2"]
-modulate = Color(0.423529, 0.423529, 0.423529, 1)
+modulate = Color(0.333333, 0.333333, 0.333333, 1)
 mesh = SubResource("QuadMesh_nu7sl")
 texture = SubResource("MeshTexture_omks2")
 
@@ -89,7 +89,7 @@ metadata/_edit_group_ = true
 shape = SubResource("RectangleShape2D_smnfn")
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="CenterWall"]
-modulate = Color(0.423529, 0.423529, 0.423529, 1)
+modulate = Color(0.333333, 0.333333, 0.333333, 1)
 mesh = SubResource("QuadMesh_nu7sl")
 texture = SubResource("MeshTexture_omks2")
 

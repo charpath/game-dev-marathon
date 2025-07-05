@@ -1,11 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://crk2eiq1lpkym"]
+[gd_scene load_steps=6 format=3 uid="uid://crk2eiq1lpkym"]
 
 [ext_resource type="PackedScene" uid="uid://g5uac1w128v1" path="res://Scenes/Objects/boundary_plats.tscn" id="1_iixi8"]
 [ext_resource type="PackedScene" uid="uid://bs45l1hkcm53t" path="res://Scenes/Objects/player_1.tscn" id="2_cyadu"]
 [ext_resource type="PackedScene" uid="uid://ck5j38x4gahpp" path="res://Scenes/Objects/player_2.tscn" id="3_xgxfi"]
 [ext_resource type="PackedScene" uid="uid://ceq7e657lkmqv" path="res://Scenes/Objects/platform.tscn" id="4_5f3p6"]
-[ext_resource type="PackedScene" uid="uid://by8vhe33k5dqn" path="res://Scenes/Objects/black_spike.tscn" id="5_cyadu"]
-[ext_resource type="PackedScene" uid="uid://2xgyspylln4b" path="res://Scenes/Objects/white_spike.tscn" id="6_xgxfi"]
+[ext_resource type="PackedScene" uid="uid://dg1ctl4ouelqo" path="res://Scenes/Objects/spike.tscn" id="5_cyadu"]
 
 [node name="Level1" type="Node2D"]
 
@@ -21,14 +20,14 @@ position = Vector2(48, 50)
 position = Vector2(480, 96)
 scale = Vector2(960, 32)
 
-[node name="BlackSpike" parent="." instance=ExtResource("5_cyadu")]
-position = Vector2(211, 72)
+[node name="Spike" parent="." instance=ExtResource("5_cyadu")]
+position = Vector2(232, 72)
 
-[node name="BlackSpike2" parent="." instance=ExtResource("5_cyadu")]
-position = Vector2(243, 72)
+[node name="Spike2" parent="." instance=ExtResource("5_cyadu")]
+position = Vector2(248, 72)
 
-[node name="WhiteSpike" parent="." instance=ExtResource("6_xgxfi")]
-position = Vector2(227, 72)
+[node name="Spike3" parent="." instance=ExtResource("5_cyadu")]
+position = Vector2(264, 72)
 
-[node name="WhiteSpike2" parent="." instance=ExtResource("6_xgxfi")]
-position = Vector2(259, 72)
+[node name="Spike4" parent="." instance=ExtResource("5_cyadu")]
+position = Vector2(280, 72)

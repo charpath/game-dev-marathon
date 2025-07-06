@@ -8,8 +8,12 @@ func _ready() -> void:
 	$MeshInstance2D.set_modulate(id)
 	if color == 1:
 		$AnimatedSprite2D.animation = "black"
+		self.set_collision_layer_value(3, true)
+		self.set_collision_layer_value(4, false)
 	else:
 		$AnimatedSprite2D.animation = "white"
+		self.set_collision_layer_value(4, true)
+		self.set_collision_layer_value(3, false)
 
 func change_state(state: int, channel):
 	if channel == id:

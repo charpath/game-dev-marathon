@@ -18,5 +18,5 @@ func _on_body_entered(body):
 	if body.is_in_group("Player") && self_state == 0:
 		self_state = 1
 		$AnimatedSprite2D.set_frame(1)
-		get_tree().call_group("stateChange", "change_state", id, self_state)
+		get_tree().call_group("stateChange", "change_state", self_state, id)
 		

@@ -1,0 +1,32 @@
+[gd_scene load_steps=7 format=3 uid="uid://cm4peqrjs5g7k"]
+
+[ext_resource type="PackedScene" uid="uid://g5uac1w128v1" path="res://Scenes/Objects/Basics/boundary_plats.tscn" id="1_k8g1k"]
+[ext_resource type="PackedScene" uid="uid://cogrsnrmp7oy4" path="res://Scenes/Objects/Basics/exit_door.tscn" id="2_x4x4f"]
+[ext_resource type="PackedScene" uid="uid://bs45l1hkcm53t" path="res://Scenes/Objects/Basics/player_1.tscn" id="3_l7ek2"]
+[ext_resource type="PackedScene" uid="uid://ck5j38x4gahpp" path="res://Scenes/Objects/Basics/player_2.tscn" id="4_7rivk"]
+[ext_resource type="PackedScene" uid="uid://bnugg5p7eiy18" path="res://Scenes/Objects/Interactables/toggle.tscn" id="5_hyk2w"]
+[ext_resource type="PackedScene" uid="uid://cobp5q47ucwjy" path="res://Scenes/Objects/Interactables/gate.tscn" id="6_mvu5i"]
+
+[node name="TestLevel" type="Node2D"]
+
+[node name="BoundaryPlats" parent="." instance=ExtResource("1_k8g1k")]
+
+[node name="ExitDoor" parent="." instance=ExtResource("2_x4x4f")]
+
+[node name="ExitDoor2" parent="." instance=ExtResource("2_x4x4f")]
+
+[node name="Player1" parent="." instance=ExtResource("3_l7ek2")]
+position = Vector2(68, 1041)
+scale = Vector2(5, 5)
+
+[node name="Player2" parent="." instance=ExtResource("4_7rivk")]
+position = Vector2(173, 1017)
+scale = Vector2(5, 5)
+
+[node name="Toggle" parent="." instance=ExtResource("5_hyk2w")]
+position = Vector2(301, 1040)
+scale = Vector2(5, 5)
+
+[node name="Gate" parent="." instance=ExtResource("6_mvu5i")]
+position = Vector2(591, 1000)
+scale = Vector2(5, 5)

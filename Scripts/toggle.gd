@@ -25,3 +25,4 @@ func _on_body_entered(body):
 		$AnimatedSprite2D.set_frame(1)
 		get_tree().call_group("stateChange", "change_state", self_state, id)
 		
+DDA

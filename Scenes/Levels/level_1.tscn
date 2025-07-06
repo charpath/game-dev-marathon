@@ -47,6 +47,10 @@ scale = Vector2(1920, 32)
 position = Vector2(144, 512)
 scale = Vector2(32, 32)
 
+[node name="Platform14" parent="." instance=ExtResource("4_5f3p6")]
+position = Vector2(1104, 656)
+scale = Vector2(32, 256)
+
 [node name="Platform10" parent="." instance=ExtResource("4_5f3p6")]
 z_index = 1
 position = Vector2(208, 704)
@@ -75,6 +79,11 @@ z_index = 1
 position = Vector2(656, 608)
 scale = Vector2(32, 32)
 
+[node name="Platform13" parent="." instance=ExtResource("4_5f3p6")]
+z_index = 1
+position = Vector2(848, 704)
+scale = Vector2(288, 32)
+
 [node name="WhitePlatform" parent="." instance=ExtResource("5_xgxfi")]
 position = Vector2(544, 208)
 scale = Vector2(128, 64)
@@ -86,6 +95,10 @@ scale = Vector2(128, 32)
 [node name="WhitePlatform6" parent="." instance=ExtResource("5_xgxfi")]
 position = Vector2(352, 704)
 scale = Vector2(128, 32)
+
+[node name="WhitePlatform9" parent="." instance=ExtResource("5_xgxfi")]
+position = Vector2(848, 864)
+scale = Vector2(32, 32)
 
 [node name="WhitePlatform7" parent="." instance=ExtResource("5_xgxfi")]
 position = Vector2(560, 704)
@@ -131,6 +144,10 @@ scale = Vector2(32, 224)
 position = Vector2(656, 800)
 scale = Vector2(32, 32)
 
+[node name="BlackPlatform9" parent="." instance=ExtResource("6_5f3p6")]
+position = Vector2(848, 672)
+scale = Vector2(32, 32)
+
 [node name="BlackPlatform2" parent="." instance=ExtResource("6_5f3p6")]
 position = Vector2(928, 208)
 scale = Vector2(128, 64)
@@ -166,6 +183,12 @@ position = Vector2(72, 744)
 [node name="BlackSpike12" parent="." instance=ExtResource("7_rb0md")]
 position = Vector2(648, 872)
 
+[node name="BlackSpike13" parent="." instance=ExtResource("7_rb0md")]
+position = Vector2(776, 680)
+
+[node name="BlackSpike14" parent="." instance=ExtResource("7_rb0md")]
+position = Vector2(872, 680)
+
 [node name="WhiteSpike4" parent="." instance=ExtResource("8_u5ghp")]
 position = Vector2(616, 232)
 
@@ -195,6 +218,12 @@ position = Vector2(424, 872)
 
 [node name="WhiteSpike13" parent="." instance=ExtResource("8_u5ghp")]
 position = Vector2(488, 872)
+
+[node name="WhiteSpike14" parent="." instance=ExtResource("8_u5ghp")]
+position = Vector2(776, 872)
+
+[node name="WhiteSpike15" parent="." instance=ExtResource("8_u5ghp")]
+position = Vector2(872, 872)
 
 [node name="Spike4" parent="." instance=ExtResource("9_hwvp3")]
 position = Vector2(1128, 232)

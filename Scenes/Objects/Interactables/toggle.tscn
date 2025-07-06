@@ -88,7 +88,7 @@ size = Vector2(14, 4)
 [sub_resource type="QuadMesh" id="QuadMesh_5iwg5"]
 
 [node name="Toggle" type="Area2D" groups=["stateChange"]]
-collision_mask = 2
+collision_mask = 0
 script = ExtResource("1_5iwg5")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

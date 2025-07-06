@@ -142,7 +142,7 @@ animations = [{
 }]
 
 [node name="ExitDoor" type="Area2D" groups=["exit"]]
-collision_mask = 34
+collision_mask = 2
 script = ExtResource("1_ux2td")
 metadata/_edit_group_ = true
 

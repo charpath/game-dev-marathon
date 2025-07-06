@@ -28,6 +28,7 @@ project/assembly_name="Game Dev Marathon"
 [global_group]
 
 Player=""
+exit=""
 
 [input]
 

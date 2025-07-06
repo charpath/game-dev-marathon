@@ -1,5 +1,6 @@
-[gd_scene load_steps=20 format=3 uid="uid://cogrsnrmp7oy4"]
+[gd_scene load_steps=21 format=3 uid="uid://cogrsnrmp7oy4"]
 
+[ext_resource type="Script" uid="uid://ixx77n4yc725" path="res://Scripts/exit_door.gd" id="1_ux2td"]
 [ext_resource type="Texture2D" uid="uid://dfevxh5hfvv4j" path="res://Sprites/DoorSpritesheet.png" id="1_wsw2j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ux2td"]
@@ -75,7 +76,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_d5wnf")
 }],
-"loop": true,
+"loop": false,
 "name": &"black",
 "speed": 5.0
 }, {
@@ -101,7 +102,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_m7pms")
 }],
-"loop": true,
+"loop": false,
 "name": &"blackExit",
 "speed": 5.0
 }, {
@@ -109,7 +110,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_kewra")
 }],
-"loop": true,
+"loop": false,
 "name": &"white",
 "speed": 5.0
 }, {
@@ -135,12 +136,14 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_j5l7b")
 }],
-"loop": true,
+"loop": false,
 "name": &"whiteExit",
 "speed": 5.0
 }]
 
-[node name="ExitDoor" type="Area2D"]
+[node name="ExitDoor" type="Area2D" groups=["exit"]]
+collision_mask = 2
+script = ExtResource("1_ux2td")
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -150,3 +153,6 @@ shape = SubResource("RectangleShape2D_ux2td")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_k6aey")
 animation = &"whiteExit"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

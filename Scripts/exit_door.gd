@@ -34,3 +34,9 @@ func player_entered():
 	
 func player_exited():
 	count -= 1
+
+
+func _on_animated_sprite_2d_animation_finished() -> void:
+	if color == 1:
+		pass
+	pass # Replace with function body.

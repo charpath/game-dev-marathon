@@ -168,7 +168,6 @@ scale = Vector2(944, 174)
 [node name="ExitDoor" parent="." instance=ExtResource("6_kj5ij")]
 position = Vector2(1476, 153)
 scale = Vector2(6, 6)
-collision_mask = 3
 
 [node name="ExitDoor2" parent="." instance=ExtResource("6_kj5ij")]
 position = Vector2(444, 153)

@@ -120,7 +120,7 @@ size = Vector2(16, 32)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_iewer")
-animation = &"white"
+animation = &"black"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_4g7pa")

@@ -15,10 +15,12 @@
 [node name="BoundaryPlats" parent="." instance=ExtResource("1_iixi8")]
 
 [node name="Player1" parent="." instance=ExtResource("2_cyadu")]
-position = Vector2(96, 146)
+position = Vector2(99, 143)
+scale = Vector2(4, 4)
 
 [node name="Player2" parent="." instance=ExtResource("3_xgxfi")]
-position = Vector2(48, 146)
+position = Vector2(48, 143)
+scale = Vector2(4, 4)
 
 [node name="Platform" parent="." instance=ExtResource("4_5f3p6")]
 position = Vector2(240, 224)

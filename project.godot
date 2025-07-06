@@ -69,9 +69,10 @@ jump_p2={
 [layer_names]
 
 2d_physics/layer_1="Platform"
-2d_physics/layer_2="Player"
+2d_physics/layer_2="Player1"
 2d_physics/layer_3="BlackPlatform"
 2d_physics/layer_4="WhitePlatform"
+2d_physics/layer_6="PLayer2"
 
 [rendering]
 

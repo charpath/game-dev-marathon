@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://be6xyqmjf4ytb"]
 
-[ext_resource type="PackedScene" uid="uid://by8vhe33k5dqn" path="res://Scenes/Objects/black_spike.tscn" id="1_p0vsi"]
+[ext_resource type="PackedScene" uid="uid://by8vhe33k5dqn" path="res://Scenes/Objects/Obstacles/black_spike.tscn" id="1_p0vsi"]
 
 [node name="BlackSpike4" type="Node2D"]
 

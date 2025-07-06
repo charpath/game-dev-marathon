@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://cs22fw6xx6gvt"]
+
+[ext_resource type="PackedScene" uid="uid://g5uac1w128v1" path="res://Scenes/Objects/Basics/boundary_plats.tscn" id="1_7qxk6"]
+[ext_resource type="PackedScene" uid="uid://ceq7e657lkmqv" path="res://Scenes/Objects/Platforms/platform.tscn" id="2_oylv5"]
+[ext_resource type="PackedScene" uid="uid://bs45l1hkcm53t" path="res://Scenes/Objects/Basics/player_1.tscn" id="3_w2ac1"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="BoundaryPlats" parent="." instance=ExtResource("1_7qxk6")]
+
+[node name="Platform" parent="." instance=ExtResource("2_oylv5")]
+position = Vector2(960, 1064)
+scale = Vector2(1920, 32)
+
+[node name="Platform2" parent="." instance=ExtResource("2_oylv5")]
+position = Vector2(960, 524)
+scale = Vector2(1664, 32)
+
+[node name="Player1" parent="." instance=ExtResource("3_w2ac1")]
+position = Vector2(938, 478)
+scale = Vector2(4, 4)
+
+[node name="Player2" parent="." instance=ExtResource("3_w2ac1")]
+position = Vector2(1028, 470)
+scale = Vector2(4, 4)
+player = 2

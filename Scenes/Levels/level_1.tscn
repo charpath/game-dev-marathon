@@ -1,15 +1,16 @@
-[gd_scene load_steps=11 format=3 uid="uid://crk2eiq1lpkym"]
+[gd_scene load_steps=12 format=3 uid="uid://crk2eiq1lpkym"]
 
-[ext_resource type="PackedScene" uid="uid://g5uac1w128v1" path="res://Scenes/Objects/boundary_plats.tscn" id="1_iixi8"]
-[ext_resource type="PackedScene" uid="uid://bs45l1hkcm53t" path="res://Scenes/Objects/player_1.tscn" id="2_cyadu"]
-[ext_resource type="PackedScene" uid="uid://ck5j38x4gahpp" path="res://Scenes/Objects/player_2.tscn" id="3_xgxfi"]
-[ext_resource type="PackedScene" uid="uid://ceq7e657lkmqv" path="res://Scenes/Objects/platform.tscn" id="4_5f3p6"]
-[ext_resource type="PackedScene" uid="uid://ru1y45l4mak7" path="res://Scenes/Objects/platform_white.tscn" id="5_xgxfi"]
-[ext_resource type="PackedScene" uid="uid://cc7vxgymcmnah" path="res://Scenes/Objects/platform_black.tscn" id="6_5f3p6"]
-[ext_resource type="PackedScene" uid="uid://be6xyqmjf4ytb" path="res://Scenes/Objects/black_spike_4.tscn" id="7_rb0md"]
-[ext_resource type="PackedScene" uid="uid://cacno7r2qou76" path="res://Scenes/Objects/white_spike_4.tscn" id="8_u5ghp"]
-[ext_resource type="PackedScene" uid="uid://s6ejpxurr78d" path="res://Scenes/Objects/spike_4.tscn" id="9_hwvp3"]
-[ext_resource type="PackedScene" uid="uid://cogrsnrmp7oy4" path="res://Scenes/Objects/exit_door.tscn" id="10_u5ghp"]
+[ext_resource type="PackedScene" uid="uid://g5uac1w128v1" path="res://Scenes/Objects/Basics/boundary_plats.tscn" id="1_iixi8"]
+[ext_resource type="PackedScene" uid="uid://bs45l1hkcm53t" path="res://Scenes/Objects/Basics/player_1.tscn" id="2_cyadu"]
+[ext_resource type="PackedScene" uid="uid://ck5j38x4gahpp" path="res://Scenes/Objects/Basics/player_2.tscn" id="3_xgxfi"]
+[ext_resource type="PackedScene" uid="uid://ceq7e657lkmqv" path="res://Scenes/Objects/Platforms/platform.tscn" id="4_5f3p6"]
+[ext_resource type="PackedScene" uid="uid://ru1y45l4mak7" path="res://Scenes/Objects/Platforms/platform_white.tscn" id="5_xgxfi"]
+[ext_resource type="PackedScene" uid="uid://cc7vxgymcmnah" path="res://Scenes/Objects/Platforms/platform_black.tscn" id="6_5f3p6"]
+[ext_resource type="PackedScene" uid="uid://be6xyqmjf4ytb" path="res://Scenes/Objects/Obstacles/black_spike_4.tscn" id="7_rb0md"]
+[ext_resource type="PackedScene" uid="uid://cacno7r2qou76" path="res://Scenes/Objects/Obstacles/white_spike_4.tscn" id="8_u5ghp"]
+[ext_resource type="PackedScene" uid="uid://s6ejpxurr78d" path="res://Scenes/Objects/Obstacles/spike_4.tscn" id="9_hwvp3"]
+[ext_resource type="PackedScene" uid="uid://cogrsnrmp7oy4" path="res://Scenes/Objects/Basics/exit_door.tscn" id="10_u5ghp"]
+[ext_resource type="PackedScene" uid="uid://by8vhe33k5dqn" path="res://Scenes/Objects/Obstacles/black_spike.tscn" id="11_hwvp3"]
 
 [node name="Level1" type="Node2D"]
 
@@ -54,8 +55,8 @@ scale = Vector2(160, 32)
 
 [node name="Platform11" parent="." instance=ExtResource("4_5f3p6")]
 z_index = 1
-position = Vector2(496, 640)
-scale = Vector2(160, 32)
+position = Vector2(480, 640)
+scale = Vector2(128, 32)
 
 [node name="Platform2" parent="." instance=ExtResource("4_5f3p6")]
 position = Vector2(1056, 208)
@@ -64,6 +65,11 @@ scale = Vector2(128, 64)
 [node name="Platform4" parent="." instance=ExtResource("4_5f3p6")]
 position = Vector2(1312, 208)
 scale = Vector2(128, 64)
+
+[node name="Platform5" parent="." instance=ExtResource("4_5f3p6")]
+z_index = 1
+position = Vector2(560, 672)
+scale = Vector2(32, 32)
 
 [node name="WhitePlatform" parent="." instance=ExtResource("5_xgxfi")]
 position = Vector2(544, 208)
@@ -78,11 +84,11 @@ position = Vector2(352, 704)
 scale = Vector2(128, 32)
 
 [node name="WhitePlatform7" parent="." instance=ExtResource("5_xgxfi")]
-position = Vector2(592, 704)
+position = Vector2(560, 704)
 scale = Vector2(32, 160)
 
 [node name="WhitePlatform8" parent="." instance=ExtResource("5_xgxfi")]
-position = Vector2(688, 624)
+position = Vector2(656, 624)
 scale = Vector2(32, 192)
 
 [node name="WhitePlatform5" parent="." instance=ExtResource("5_xgxfi")]
@@ -110,8 +116,20 @@ position = Vector2(208, 752)
 scale = Vector2(160, 256)
 
 [node name="BlackPlatform6" parent="." instance=ExtResource("6_5f3p6")]
-position = Vector2(496, 656)
-scale = Vector2(160, 256)
+position = Vector2(480, 656)
+scale = Vector2(128, 256)
+
+[node name="BlackPlatform7" parent="." instance=ExtResource("6_5f3p6")]
+position = Vector2(688, 704)
+scale = Vector2(32, 224)
+
+[node name="BlackPlatform8" parent="." instance=ExtResource("6_5f3p6")]
+position = Vector2(640, 800)
+scale = Vector2(64, 32)
+
+[node name="BlackPlatform9" parent="." instance=ExtResource("6_5f3p6")]
+position = Vector2(576, 672)
+scale = Vector2(64, 32)
 
 [node name="BlackPlatform2" parent="." instance=ExtResource("6_5f3p6")]
 position = Vector2(928, 208)
@@ -139,6 +157,15 @@ position = Vector2(1000, 392)
 [node name="BlackSpike9" parent="." instance=ExtResource("7_rb0md")]
 position = Vector2(1064, 392)
 
+[node name="BlackSpike10" parent="." instance=ExtResource("7_rb0md")]
+position = Vector2(8, 744)
+
+[node name="BlackSpike11" parent="." instance=ExtResource("7_rb0md")]
+position = Vector2(72, 744)
+
+[node name="BlackSpike12" parent="." instance=ExtResource("7_rb0md")]
+position = Vector2(616, 872)
+
 [node name="WhiteSpike4" parent="." instance=ExtResource("8_u5ghp")]
 position = Vector2(616, 232)
 
@@ -157,6 +184,18 @@ position = Vector2(1256, 392)
 [node name="WhiteSpike9" parent="." instance=ExtResource("8_u5ghp")]
 position = Vector2(1320, 392)
 
+[node name="WhiteSpike10" parent="." instance=ExtResource("8_u5ghp")]
+position = Vector2(296, 872)
+
+[node name="WhiteSpike11" parent="." instance=ExtResource("8_u5ghp")]
+position = Vector2(360, 872)
+
+[node name="WhiteSpike12" parent="." instance=ExtResource("8_u5ghp")]
+position = Vector2(424, 872)
+
+[node name="WhiteSpike13" parent="." instance=ExtResource("8_u5ghp")]
+position = Vector2(488, 872)
+
 [node name="Spike4" parent="." instance=ExtResource("9_hwvp3")]
 position = Vector2(1128, 232)
 
@@ -171,3 +210,9 @@ scale = Vector2(4, 4)
 position = Vector2(138, 1048)
 scale = Vector2(4, 4)
 color = 2
+
+[node name="BlackSpike" parent="." instance=ExtResource("11_hwvp3")]
+position = Vector2(680, 872)
+
+[node name="BlackSpike2" parent="." instance=ExtResource("11_hwvp3")]
+position = Vector2(696, 872)

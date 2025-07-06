@@ -1,5 +1,6 @@
-[gd_scene load_steps=10 format=3 uid="uid://ckr3pskujw6ep"]
+[gd_scene load_steps=11 format=3 uid="uid://ckr3pskujw6ep"]
 
+[ext_resource type="Script" uid="uid://b2ylfc0wlf5l6" path="res://Scripts/levels.gd" id="1_1ih7c"]
 [ext_resource type="PackedScene" uid="uid://bs45l1hkcm53t" path="res://Scenes/Objects/player_1.tscn" id="1_t218m"]
 [ext_resource type="PackedScene" uid="uid://ck5j38x4gahpp" path="res://Scenes/Objects/player_2.tscn" id="2_v6xcw"]
 [ext_resource type="PackedScene" uid="uid://cc7vxgymcmnah" path="res://Scenes/Objects/platform_black.tscn" id="3_r74qd"]
@@ -15,6 +16,7 @@ size = Vector2(1, 1)
 [sub_resource type="MeshTexture" id="MeshTexture_omks2"]
 
 [node name="Level0" type="Node2D"]
+script = ExtResource("1_1ih7c")
 
 [node name="Player1" parent="." instance=ExtResource("1_t218m")]
 position = Vector2(891, 999)

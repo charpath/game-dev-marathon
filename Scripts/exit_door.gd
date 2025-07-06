@@ -38,5 +38,5 @@ func player_exited():
 
 func _on_animated_sprite_2d_animation_finished() -> void:
 	if color == 1:
-		pass
+		get_tree().change_scene_to_file(get_parent().level_next)
 	pass # Replace with function body.

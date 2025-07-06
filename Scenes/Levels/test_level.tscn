@@ -12,6 +12,7 @@
 [node name="BoundaryPlats" parent="." instance=ExtResource("1_k8g1k")]
 
 [node name="ExitDoor" parent="." instance=ExtResource("2_x4x4f")]
+collision_mask = 34
 
 [node name="ExitDoor2" parent="." instance=ExtResource("2_x4x4f")]
 
@@ -26,6 +27,7 @@ scale = Vector2(5, 5)
 [node name="Toggle" parent="." instance=ExtResource("5_hyk2w")]
 position = Vector2(301, 1040)
 scale = Vector2(5, 5)
+color = 2
 
 [node name="Gate" parent="." instance=ExtResource("6_mvu5i")]
 position = Vector2(591, 1000)

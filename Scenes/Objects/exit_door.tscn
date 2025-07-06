@@ -1,0 +1,152 @@
+[gd_scene load_steps=20 format=3 uid="uid://cogrsnrmp7oy4"]
+
+[ext_resource type="Texture2D" uid="uid://dfevxh5hfvv4j" path="res://Sprites/DoorSpritesheet.png" id="1_wsw2j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ux2td"]
+size = Vector2(11, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d5wnf"]
+atlas = ExtResource("1_wsw2j")
+region = Rect2(48, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m8ot7"]
+atlas = ExtResource("1_wsw2j")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1adbb"]
+atlas = ExtResource("1_wsw2j")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aavvn"]
+atlas = ExtResource("1_wsw2j")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rgp6j"]
+atlas = ExtResource("1_wsw2j")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yto26"]
+atlas = ExtResource("1_wsw2j")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ujegx"]
+atlas = ExtResource("1_wsw2j")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m7pms"]
+atlas = ExtResource("1_wsw2j")
+region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kewra"]
+atlas = ExtResource("1_wsw2j")
+region = Rect2(48, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p38dr"]
+atlas = ExtResource("1_wsw2j")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wnpwv"]
+atlas = ExtResource("1_wsw2j")
+region = Rect2(16, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8wu3o"]
+atlas = ExtResource("1_wsw2j")
+region = Rect2(32, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d1com"]
+atlas = ExtResource("1_wsw2j")
+region = Rect2(48, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bw74e"]
+atlas = ExtResource("1_wsw2j")
+region = Rect2(0, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kv4k0"]
+atlas = ExtResource("1_wsw2j")
+region = Rect2(16, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j5l7b"]
+atlas = ExtResource("1_wsw2j")
+region = Rect2(32, 48, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_k6aey"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d5wnf")
+}],
+"loop": true,
+"name": &"black",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m8ot7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1adbb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aavvn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rgp6j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yto26")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ujegx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m7pms")
+}],
+"loop": true,
+"name": &"blackExit",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kewra")
+}],
+"loop": true,
+"name": &"white",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p38dr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wnpwv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8wu3o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1com")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bw74e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kv4k0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j5l7b")
+}],
+"loop": true,
+"name": &"whiteExit",
+"speed": 5.0
+}]
+
+[node name="ExitDoor" type="Area2D"]
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_ux2td")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_k6aey")
+animation = &"whiteExit"

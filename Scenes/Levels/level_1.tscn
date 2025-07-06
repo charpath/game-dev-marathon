@@ -40,8 +40,8 @@ position = Vector2(1104, 512)
 scale = Vector2(1632, 32)
 
 [node name="Platform9" parent="." instance=ExtResource("4_5f3p6")]
-position = Vector2(960, 896)
-scale = Vector2(1920, 32)
+position = Vector2(960, 1008)
+scale = Vector2(1920, 256)
 
 [node name="Platform8" parent="." instance=ExtResource("4_5f3p6")]
 position = Vector2(144, 512)
@@ -50,6 +50,10 @@ scale = Vector2(32, 32)
 [node name="Platform14" parent="." instance=ExtResource("4_5f3p6")]
 position = Vector2(1104, 656)
 scale = Vector2(32, 256)
+
+[node name="Platform15" parent="." instance=ExtResource("4_5f3p6")]
+position = Vector2(1504, 800)
+scale = Vector2(128, 32)
 
 [node name="Platform10" parent="." instance=ExtResource("4_5f3p6")]
 z_index = 1
@@ -100,6 +104,14 @@ scale = Vector2(128, 32)
 position = Vector2(848, 864)
 scale = Vector2(32, 32)
 
+[node name="WhitePlatform12" parent="." instance=ExtResource("5_xgxfi")]
+position = Vector2(1776, 672)
+scale = Vector2(128, 32)
+
+[node name="WhitePlatform11" parent="." instance=ExtResource("5_xgxfi")]
+position = Vector2(1696, 768)
+scale = Vector2(32, 32)
+
 [node name="WhitePlatform7" parent="." instance=ExtResource("5_xgxfi")]
 position = Vector2(560, 704)
 scale = Vector2(32, 160)
@@ -118,6 +130,10 @@ scale = Vector2(128, 64)
 
 [node name="WhitePlatform3" parent="." instance=ExtResource("5_xgxfi")]
 position = Vector2(1056, 448)
+scale = Vector2(128, 96)
+
+[node name="WhitePlatform10" parent="." instance=ExtResource("5_xgxfi")]
+position = Vector2(544, 448)
 scale = Vector2(128, 96)
 
 [node name="BlackPlatform" parent="." instance=ExtResource("6_5f3p6")]
@@ -148,12 +164,24 @@ scale = Vector2(32, 32)
 position = Vector2(848, 672)
 scale = Vector2(32, 32)
 
+[node name="BlackPlatform11" parent="." instance=ExtResource("6_5f3p6")]
+position = Vector2(1312, 768)
+scale = Vector2(32, 32)
+
+[node name="BlackPlatform12" parent="." instance=ExtResource("6_5f3p6")]
+position = Vector2(1232, 672)
+scale = Vector2(128, 32)
+
 [node name="BlackPlatform2" parent="." instance=ExtResource("6_5f3p6")]
 position = Vector2(928, 208)
 scale = Vector2(128, 64)
 
 [node name="BlackPlatform3" parent="." instance=ExtResource("6_5f3p6")]
 position = Vector2(1312, 448)
+scale = Vector2(128, 96)
+
+[node name="BlackPlatform10" parent="." instance=ExtResource("6_5f3p6")]
+position = Vector2(800, 448)
 scale = Vector2(128, 96)
 
 [node name="BlackSpike4" parent="." instance=ExtResource("7_rb0md")]
@@ -173,6 +201,12 @@ position = Vector2(1000, 392)
 
 [node name="BlackSpike9" parent="." instance=ExtResource("7_rb0md")]
 position = Vector2(1064, 392)
+
+[node name="BlackSpike15" parent="." instance=ExtResource("7_rb0md")]
+position = Vector2(616, 488)
+
+[node name="BlackSpike16" parent="." instance=ExtResource("7_rb0md")]
+position = Vector2(680, 488)
 
 [node name="BlackSpike10" parent="." instance=ExtResource("7_rb0md")]
 position = Vector2(8, 744)
@@ -207,6 +241,12 @@ position = Vector2(1256, 392)
 [node name="WhiteSpike9" parent="." instance=ExtResource("8_u5ghp")]
 position = Vector2(1320, 392)
 
+[node name="WhiteSpike16" parent="." instance=ExtResource("8_u5ghp")]
+position = Vector2(360, 488)
+
+[node name="WhiteSpike17" parent="." instance=ExtResource("8_u5ghp")]
+position = Vector2(424, 488)
+
 [node name="WhiteSpike10" parent="." instance=ExtResource("8_u5ghp")]
 position = Vector2(296, 872)
 
@@ -232,10 +272,10 @@ position = Vector2(1128, 232)
 position = Vector2(1192, 232)
 
 [node name="ExitDoor" parent="." instance=ExtResource("10_u5ghp")]
-position = Vector2(60, 1048)
+position = Vector2(1778, 624)
 scale = Vector2(4, 4)
 
 [node name="ExitDoor2" parent="." instance=ExtResource("10_u5ghp")]
-position = Vector2(138, 1048)
+position = Vector2(1234, 624)
 scale = Vector2(4, 4)
 color = 2

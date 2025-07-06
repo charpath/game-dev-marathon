@@ -64,3 +64,4 @@ func _ready():
 func die():
 	position = initial_pos
 	lockout = max_lockout
+	velocity = Vector2.ZERO

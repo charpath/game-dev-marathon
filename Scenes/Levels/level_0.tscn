@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cc7vxgymcmnah" path="res://Scenes/Objects/platform_black.tscn" id="3_r74qd"]
 [ext_resource type="PackedScene" uid="uid://ru1y45l4mak7" path="res://Scenes/Objects/platform_white.tscn" id="4_um5o3"]
 [ext_resource type="PackedScene" uid="uid://g5uac1w128v1" path="res://Scenes/Objects/boundary_plats.tscn" id="5_um5o3"]
-[ext_resource type="PackedScene" uid="uid://cogrsnrmp7oy4" path="res://Scenes/Objects/exit_door.tscn" id="6_kj5ij"]
+[ext_resource type="PackedScene" path="res://Scenes/Objects/exit_door.tscn" id="6_kj5ij"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_smnfn"]
 size = Vector2(1, 1)
@@ -166,7 +166,6 @@ scale = Vector2(944, 174)
 position = Vector2(1483, 151)
 scale = Vector2(6, 6)
 collision_mask = 3
-color = 1
 
 [node name="ExitDoor2" parent="." instance=ExtResource("6_kj5ij")]
 position = Vector2(449, 153)

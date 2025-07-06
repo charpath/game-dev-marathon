@@ -19,7 +19,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_onrkg"]
-size = Vector2(9, 16)
+size = Vector2(6, 14)
 
 [node name="Player2" type="CharacterBody2D" groups=["Player"]]
 z_index = 1
@@ -34,4 +34,5 @@ sprite_frames = SubResource("SpriteFrames_4flbx")
 animation = &"walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_onrkg")

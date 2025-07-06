@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://cs22fw6xx6gvt"]
+[gd_scene load_steps=7 format=3 uid="uid://cs22fw6xx6gvt"]
 
 [ext_resource type="PackedScene" uid="uid://g5uac1w128v1" path="res://Scenes/Objects/Basics/boundary_plats.tscn" id="1_7qxk6"]
 [ext_resource type="PackedScene" uid="uid://ceq7e657lkmqv" path="res://Scenes/Objects/Platforms/platform.tscn" id="2_oylv5"]
 [ext_resource type="PackedScene" uid="uid://bs45l1hkcm53t" path="res://Scenes/Objects/Basics/player_1.tscn" id="3_w2ac1"]
+[ext_resource type="PackedScene" uid="uid://ck5j38x4gahpp" path="res://Scenes/Objects/Basics/player_2.tscn" id="4_8qsmg"]
+[ext_resource type="PackedScene" uid="uid://cacno7r2qou76" path="res://Scenes/Objects/Obstacles/white_spike_4.tscn" id="5_fphuk"]
+[ext_resource type="PackedScene" uid="uid://be6xyqmjf4ytb" path="res://Scenes/Objects/Obstacles/black_spike_4.tscn" id="6_pnnky"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -17,10 +20,33 @@ position = Vector2(960, 524)
 scale = Vector2(1664, 32)
 
 [node name="Player1" parent="." instance=ExtResource("3_w2ac1")]
-position = Vector2(938, 478)
+position = Vector2(896, 476)
 scale = Vector2(4, 4)
 
-[node name="Player2" parent="." instance=ExtResource("3_w2ac1")]
-position = Vector2(1028, 470)
+[node name="Player2" parent="." instance=ExtResource("4_8qsmg")]
+position = Vector2(1024, 476)
 scale = Vector2(4, 4)
-player = 2
+
+[node name="WhiteSpike4" parent="." instance=ExtResource("5_fphuk")]
+position = Vector2(764, 500)
+
+[node name="WhiteSpike5" parent="." instance=ExtResource("5_fphuk")]
+position = Vector2(700, 500)
+
+[node name="WhiteSpike6" parent="." instance=ExtResource("5_fphuk")]
+position = Vector2(636, 500)
+
+[node name="WhiteSpike7" parent="." instance=ExtResource("5_fphuk")]
+position = Vector2(1364, 500)
+
+[node name="BlackSpike4" parent="." instance=ExtResource("6_pnnky")]
+position = Vector2(1108, 500)
+
+[node name="BlackSpike7" parent="." instance=ExtResource("6_pnnky")]
+position = Vector2(508, 500)
+
+[node name="BlackSpike5" parent="." instance=ExtResource("6_pnnky")]
+position = Vector2(1172, 500)
+
+[node name="BlackSpike6" parent="." instance=ExtResource("6_pnnky")]
+position = Vector2(1236, 500)

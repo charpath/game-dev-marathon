@@ -1,5 +1,6 @@
-[gd_scene load_steps=12 format=3 uid="uid://bnugg5p7eiy18"]
+[gd_scene load_steps=13 format=3 uid="uid://bnugg5p7eiy18"]
 
+[ext_resource type="Script" uid="uid://jqq5mb1sjbwk" path="res://Scripts/toggle.gd" id="1_5iwg5"]
 [ext_resource type="Texture2D" uid="uid://c5yeq1q2cherj" path="res://Sprites/Button_Lever_Spritesheet.png" id="1_b7lfy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5iwg5"]
@@ -44,7 +45,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_5eb13")
 }],
 "loop": false,
-"name": &"blackButton",
+"name": &"black",
 "speed": 5.0
 }, {
 "frames": [{
@@ -66,7 +67,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_pxyvt")
 }],
 "loop": false,
-"name": &"whiteButton",
+"name": &"white",
 "speed": 5.0
 }, {
 "frames": [{
@@ -85,10 +86,11 @@ animations = [{
 size = Vector2(14, 4)
 
 [node name="Toggle" type="Area2D"]
+script = ExtResource("1_5iwg5")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ravjm")
-animation = &"blackButton"
+animation = &"white"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 6)

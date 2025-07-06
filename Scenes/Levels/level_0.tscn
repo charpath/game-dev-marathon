@@ -17,6 +17,7 @@ size = Vector2(1, 1)
 
 [node name="Level0" type="Node2D"]
 script = ExtResource("1_1ih7c")
+level_next = "res://Scenes/Levels/level_1.tscn"
 
 [node name="Player1" parent="." instance=ExtResource("1_t218m")]
 position = Vector2(891, 999)

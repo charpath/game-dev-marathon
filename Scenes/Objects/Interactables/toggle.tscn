@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bnugg5p7eiy18"]
+[gd_scene load_steps=14 format=3 uid="uid://bnugg5p7eiy18"]
 
 [ext_resource type="Script" uid="uid://jqq5mb1sjbwk" path="res://Scripts/toggle.gd" id="1_5iwg5"]
 [ext_resource type="Texture2D" uid="uid://c5yeq1q2cherj" path="res://Sprites/Button_Lever_Spritesheet.png" id="1_b7lfy"]
@@ -85,6 +85,8 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v41rn"]
 size = Vector2(14, 4)
 
+[sub_resource type="QuadMesh" id="QuadMesh_5iwg5"]
+
 [node name="Toggle" type="Area2D" groups=["stateChange"]]
 collision_mask = 2
 script = ExtResource("1_5iwg5")
@@ -96,5 +98,11 @@ animation = &"white"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 6)
 shape = SubResource("RectangleShape2D_v41rn")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+z_index = -1
+position = Vector2(0.25, 7.25)
+scale = Vector2(7.5, 1.5)
+mesh = SubResource("QuadMesh_5iwg5")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

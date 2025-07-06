@@ -1,16 +1,21 @@
 extends Area2D
 
 @export var color = 1
-@export var id = 0
+@export var id = "AQUA"
 @export var self_state = 0
 
 func _ready() -> void:
+	$MeshInstance2D.set_modulate(id)
 	if color == 1:
 		$AnimatedSprite2D.animation = "black"
+		self.set_collision_mask_value(2, true)
+		self.set_collision_mask_value(6, false)
 	else:
 		$AnimatedSprite2D.animation = "white"
+		self.set_collision_mask_value(2, false)
+		self.set_collision_mask_value(6, true)
 
-func change_state(state: int, channel: int):
+func change_state(state: int, channel):
 	if channel == id:
 		pass
 

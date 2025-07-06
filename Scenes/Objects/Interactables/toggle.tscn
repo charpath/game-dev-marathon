@@ -1,0 +1,95 @@
+[gd_scene load_steps=12 format=3 uid="uid://bnugg5p7eiy18"]
+
+[ext_resource type="Texture2D" uid="uid://c5yeq1q2cherj" path="res://Sprites/Button_Lever_Spritesheet.png" id="1_b7lfy"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5iwg5"]
+atlas = ExtResource("1_b7lfy")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5eb13"]
+atlas = ExtResource("1_b7lfy")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_82f88"]
+atlas = ExtResource("1_b7lfy")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4bxlb"]
+atlas = ExtResource("1_b7lfy")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l78gu"]
+atlas = ExtResource("1_b7lfy")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pxyvt"]
+atlas = ExtResource("1_b7lfy")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u5l7m"]
+atlas = ExtResource("1_b7lfy")
+region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4gja2"]
+atlas = ExtResource("1_b7lfy")
+region = Rect2(48, 16, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ravjm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5iwg5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5eb13")
+}],
+"loop": false,
+"name": &"blackButton",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_82f88")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4bxlb")
+}],
+"loop": true,
+"name": &"blackLever",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l78gu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pxyvt")
+}],
+"loop": false,
+"name": &"whiteButton",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u5l7m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4gja2")
+}],
+"loop": true,
+"name": &"whiteLever",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v41rn"]
+size = Vector2(14, 4)
+
+[node name="Toggle" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ravjm")
+animation = &"blackButton"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 6)
+shape = SubResource("RectangleShape2D_v41rn")
